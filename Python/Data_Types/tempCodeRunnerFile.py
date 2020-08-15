@@ -1,0 +1,1 @@
+ax\N{SUPERSCRIPT TWO} + bx + c = 0
