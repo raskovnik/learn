@@ -48,4 +48,5 @@ class Circle(Point):
         return repr(self)
 
 b = Circle(randint(1, 100), randint(1, 100), randint(1, 100))
-print(f"Circle {b} is {b.distance_from_origin()} units from the origin.")
+print(f"{b} is {b.distance_from_origin()} units from the origin.")
+print(f"{b} has a circumference of {b.circumference()} units")
