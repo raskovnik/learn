@@ -1,4 +1,4 @@
-#My simple implementation of a binary tree
+# My simple implementation of a binary tree
 # using preorder traversal
 
 class Node(object):

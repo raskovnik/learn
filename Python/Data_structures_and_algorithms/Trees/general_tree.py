@@ -9,7 +9,7 @@ class Tree():
         self.children.append(child)
 
     def pretty_print(self):
-        spaces = "   " * self.get_level()
+        spaces = "|  " * self.get_level()
         prefix = spaces + "-->" if self.parent else ""
         print(prefix + self.data)
         if self.children:

@@ -1,4 +1,4 @@
-#simple implementation of a binary search tree
+# simple implementation of a binary search tree
 
 from random import randint
 
