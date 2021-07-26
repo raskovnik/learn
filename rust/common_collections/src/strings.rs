@@ -17,13 +17,13 @@ fn upd_string() {
     s.push_str("bar");
 
     //adding characters using push
-    s.push("!")
+    s.push("!");
 }
 
 //concatenating strings
 fn concat() {
     let s1 = String::from("Hello, ");
-    let s2 = String::from*("world!");
+    let s2 = String::from("world!");
     let s3 = s1 + &s2; // s1 has been moved here and can no longer be used
 }
 
