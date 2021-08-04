@@ -9,8 +9,8 @@ fn main() {
 
     //accessing values in a hash map
     let team_name = String::from("blue");
-    let score = scores.get(&team_name);
-
+    let score = &scores.get(&team_name);
+    println!("{:?}", scores.values().next());
     for (key, value) in &scores {
             println!{"{}: {}", key, value};
     }
