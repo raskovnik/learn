@@ -13,8 +13,8 @@ int main() {
     unsigned int deck[SUITS][FACES] = {0};
     int c = 1;
 
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 12; j++) {
+    for (size_t i = 0; i < 4; i++) {
+        for (size_t j = 0; j < 12; j++) {
             deck[i][j] = c;
             c++;
         }
