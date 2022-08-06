@@ -31,12 +31,14 @@ bool isFull(int n) {
   return (n == 0);
 }
 
-void insert(List board, int pos, String input, int empty) {
+bool insert(List board, int pos, String input, int empty) {
   if (board[pos % 2][(pos ~/ 2)] != "-") {
     print("Position is not empty. Enter another position");
+    return false;
   } else {
     board[pos%2][pos ~/ 2] = input;
     empty -= 1;
+    return true;
   }
 }
 
@@ -85,9 +87,21 @@ void main() {
 //TODO: implement gameplay
   while (!isFull(empty)) {
     if (choice == 1) {
-      int user = GetInput();
-      insert(board, user, player1, empty);
+      while (true) {
+        int user;
+        int comp;
 
+        do {
+          user = GetInput();
+        } while (!insert(board, user, player1, empty));
+
+        do {
+          comp = CompInput();
+        } while (!insert(board, comp, player2, empty));
+
+        
+      }
     }
+
   }
 }
