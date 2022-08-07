@@ -16,7 +16,7 @@ void main() {
     } else if (correct.toLowerCase() == "low") {
       min = guess;
     } else if (correct.toLowerCase() == "correct" || correct.toLowerCase().contains("cor")) {
-      print("The number was $guess and gotten after $attempts attempts");
+      print("The number was $guess and gotten after $attempts attempts. Binary search for the win!!");
       break;
     }
 
