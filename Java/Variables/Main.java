@@ -10,5 +10,7 @@ public class Main {
         System.out.println("My number is: "+x);
         System.out.println(y);
         System.out.println("Hello " + name);
+        System.out.println(z);
+        System.out.println(symbol);
     }
 }
