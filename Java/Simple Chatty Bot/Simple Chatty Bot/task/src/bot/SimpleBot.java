@@ -11,6 +11,7 @@ public class SimpleBot {
         guessAge();
         count();
         // ...
+        test();
         end();
     }
 

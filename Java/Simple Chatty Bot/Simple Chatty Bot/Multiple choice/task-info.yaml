@@ -170,64 +170,9 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/9929#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #1
-
-    You should output at least 21 lines (for the count number 10).
-    Lines found: 20
-    Your output:
-    Hello! My name is Aid.
-    I was created in 2018.
-    Please, remind me your name.
-    What a great name you have, Marry!
-    Let me guess your age.
-    Enter remainders of dividing your age by 3, 5 and 7.
-    Your age is 40; that&#39;s a good time to start programming!
-    Now I will prove to you that I can count to any number you want.
-    0!
-    1!
-    2!
-    3!
-    4!
-    5!
-    6!
-    7!
-    8!
-    9!
-    10!
-    Congratulations, have a nice day!
-
-    Please find below the output of your program during this failed test.
-    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
-
-    ---
-
-    Hello! My name is Aid.
-    I was created in 2018.
-    Please, remind me your name.
-    &gt; Marry
-    What a great name you have, Marry!
-    Let me guess your age.
-    Enter remainders of dividing your age by 3, 5 and 7.
-    &gt; 1
-    &gt; 0
-    &gt; 5
-    Your age is 40; that&#39;s a good time to start programming!
-    Now I will prove to you that I can count to any number you want.
-    &gt; 10
-    0!
-    1!
-    2!
-    3!
-    4!
-    5!
-    6!
-    7!
-    8!
-    9!
-    10!
-    Congratulations, have a nice day!
-  time: Tue, 18 Oct 2022 20:51:42 UTC
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
+    Academy</a> to continue learning.
+  time: Thu, 20 Oct 2022 17:33:06 UTC
 record: -1
