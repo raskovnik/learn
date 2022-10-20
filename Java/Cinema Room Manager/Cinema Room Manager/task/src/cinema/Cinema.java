@@ -30,8 +30,11 @@ public class Cinema {
             System.out.println("""
                     1. Show the seats\n
                     2. Buy a ticket\n
+                    3. Statistics
                     0. Exit""");
             int choice = scanner.nextInt();
+            int purchased = 0;
+            int income = 0;
 
             switch (choice) {
                 case 1:
@@ -53,31 +56,50 @@ public class Cinema {
                     int row = scanner.nextInt();
                     System.out.println("Enter a seat number in that row:");
                     int seat = scanner.nextInt();
-                    cinema[row - 1][seat - 1] = 'B';
-                    if (rows * seats < 60) {
-                        System.out.println("Ticket price: $10");
+                    if (cinema[row - 1][seat - 1] == 'B') {
+                        System.out.println("That ticket has already been purchased!");
+                        break;
                     } else {
-                        if (row <= rows / 2) {
+                        cinema[row - 1][seat - 1] = 'B';
+                        purchased++;
+                        if (rows * seats < 60) {
                             System.out.println("Ticket price: $10");
+                            income += 10;
                         } else {
-                            System.out.println("Ticket price: $8");
+                            if (row <= rows / 2) {
+                                System.out.println("Ticket price: $10");
+                                income += 10;
+                            } else {
+                                System.out.println("Ticket price: $8");
+                                income += 8;
+                            }
+//
                         }
-//            System.out.println("Total income:\n$"+((rows/2)*10*seats+(rows-(rows/2))*8*seats));
-                    }
 
-                    System.out.println("Cinema:");
-                    for (int i = 1; i <= seats; i++) {
-                        System.out.print(" " + i);
-                    }
-                    System.out.println();
-                    for (int i = 0; i < rows; i++) {
-                        System.out.print(i + 1 + " ");
-                        for (int j = 0; j < seats; j++) {
-                            System.out.print(cinema[i][j] + " ");
+                        System.out.println("Cinema:");
+                        for (int i = 1; i <= seats; i++) {
+                            System.out.print(" " + i);
                         }
                         System.out.println();
+                        for (int i = 0; i < rows; i++) {
+                            System.out.print(i + 1 + " ");
+                            for (int j = 0; j < seats; j++) {
+                                System.out.print(cinema[i][j] + " ");
+                            }
+                            System.out.println();
+                        }
                     }
+
                    break;
+                case 3:
+                    System.out.println("Number of purchased ticket: "+purchased);
+                    System.out.println("Percentage: "+(purchased / (rows * seats)) * 100);
+                    System.out.println("Current income: "+income);
+                    if (rows * seats < 60) {
+                        System.out.println("Total income: $" + rows * seats * 10);
+                    } else {
+                        System.out.println("Total income:\n$"+((rows/2)*10*seats+(rows-(rows/2))*8*seats));
+                    }
                 case 0:
                     return;
             }
