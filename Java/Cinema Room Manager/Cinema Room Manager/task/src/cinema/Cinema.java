@@ -6,15 +6,7 @@ public class Cinema {
     public static void main(String[] args) {
         // Write your code here
         Scanner scanner = new Scanner(System.in);
-//        System.out.println("Cinema:");
-//        System.out.println("  1 2 3 4 5 6 7 8");
-//        for (int i = 1; i < 8; i++) {
-//            System.out.print(i + " ");
-//            for (int j = 0; j < 8; j++) {
-//                System.out.print("S ");
-//            }
-//            System.out.println();
-//        }
+
         System.out.println("Enter the number of rows:");
         int rows = scanner.nextInt();
         System.out.println("Enter the number of seats in each row:");
@@ -38,7 +30,6 @@ public class Cinema {
                     0. Exit""");
 
             int choice = scanner.nextInt();
-            percentage = String.format("%.2f", ((purchased / (rows * seats))*100.00)/100.00);
             switch (choice) {
                 case 1:
                     System.out.println("Cinema:");
@@ -121,14 +112,3 @@ public class Cinema {
     }
 }
 
-
-//
-//        if (rows * seats < 60) {
-//            System.out.println("Total income:\n$"+(rows*seats*10));
-//        } else {
-//            System.out.println("Total income:\n$"+((rows/2)*10*seats+(rows-(rows/2))*8*seats));
-//        }
-
-//
-//    }
-//}
